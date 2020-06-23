@@ -57,9 +57,6 @@ rl.on('line', (line: any) => {
         setPositionAndDirection(x, y, direction);
         isPlaced = true;
       }
-      // else {
-      //   console.log('Invalid position and/or direction.');
-      // }
       break;
     case 'MOVE':
       if (isPlaced) {
@@ -85,7 +82,6 @@ rl.on('line', (line: any) => {
       }
       break;
     default:
-      // console.log(`Valid commands available: [PLACE, MOVE, LEFT, RIGHT, REPORT]`);
       break;
   }
 });
